@@ -13,7 +13,6 @@ class EditNoteView extends StatelessWidget {
         title: const Text("Edit Note"),
         centerTitle: true,
         actionsPadding: const EdgeInsets.symmetric(horizontal: 16),
-        actions: [IconButton(onPressed: () {}, icon: const Icon(Icons.check))],
       ),
       body: const EditNoteViewBody(),
     );
