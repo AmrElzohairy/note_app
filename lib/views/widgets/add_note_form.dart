@@ -29,7 +29,6 @@ class _AddNoteFormState extends State<AddNoteForm> {
           ),
           const SizedBox(height: 16),
           CustomTextField(
-            
             onSaved: (value) {
               content = value;
             },
