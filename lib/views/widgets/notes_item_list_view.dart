@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:note_app/views/widgets/note_item.dart';
 
@@ -10,6 +9,7 @@ class NotesItemListView extends StatelessWidget {
     return Expanded(
       child: ListView.separated(
         itemCount: 10,
+        physics: const BouncingScrollPhysics(),
         separatorBuilder: (context, index) => const SizedBox(height: 16),
         itemBuilder: (context, index) {
           return const NoteItem();
